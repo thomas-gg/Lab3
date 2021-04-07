@@ -1,1 +1,39 @@
-Fill in the passphrases here.
+CSE 110 Lab 2  Thomas Garry
+1 --> Comment at top of html file
+--> Passcode: greenEggsAndHam
+
+2 <title data-question2passcode...>
+--> Passcode: iHateCplusplus
+
+3 <p hidden ...> 
+Passcode: HTMLRocks
+
+4 --> <question-four style.....> ...
+--> Passcode: JavaScriptRules
+
+5 --> opacity: 100; instead of opacity:0 showed the message
+--> Passcode: SvelteBeatsReact
+
+6 --> in dontlookhere.js comment
+--> Passcode: ThisIsJS
+
+7 --> pressed ctrl+shift+i on chrome to open dev tools 
+--> passcode: YouFoundMe
+
+8 --> went to head -> style --> question 8 comment  (proceeded to say visibility:show)
+--> passcode: coolcoolcool
+
+9 --> After visibility:show
+--> passcode: 2020sucked
+
+10 --> After looking at dontlookhere.js
+https://cse110lab2.herokuapp.com/question10.jpg
+--> Passcode: listenToTheBlackKeys
+
+11 --> After visibility:show
+--> passcode:a11yComesFirst
+
+12 --> <div question12passcode ...>
+--> Passcode: iLoveWebDev
+
+13 --> 404 status code
