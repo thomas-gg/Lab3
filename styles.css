@@ -1,6 +1,25 @@
+/* universal selector */
+* {
+  color: rgb(63, 0, 63);
+}
+
+/* element selector */
 body {
   background-color: rgb(193, 235, 255);
   margin-left: 10px;
+}
+
+/* media query */
+@media (max-width: 1000px) {
+  body {
+    background-color: rgb(252, 232, 169);
+  }
+}
+
+/* attribute selector */
+/* anchor tags which contain the id with the word second */
+a[href*="second"] {
+  color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -11,6 +30,7 @@ summary {
   color: #056401;
 }
 
+/* id selector */
 /* Click to articles! */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
@@ -34,6 +54,8 @@ summary {
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
+
+/* pseudo-class sellector */
 .articleTitle:hover {
   color: steelblue;
 }
@@ -78,6 +100,8 @@ textarea {
 input {
   display: block;
 }
+
+/* selector list */
 form,
 fieldset {
   display: inline;
@@ -91,7 +115,7 @@ video {
 
 #favSongsList {
   min-height: 240px;
-  background-color: steelblue;
+  background-color: rgb(129, 164, 192);
 }
 #frisbee {
   position: relative;
@@ -128,4 +152,24 @@ video {
   width: 200px;
   margin: 10px;
   text-align: center;
+}
+
+/*  Child combinator */
+#firstArticle > p {
+  color: palevioletred;
+}
+
+/*  general sibiling combinator */
+h3 ~ h4 {
+  color: rgb(139, 4, 156);
+}
+
+/* Descendant combinator */
+fieldset label {
+  color: tan;
+}
+
+/* Combining two selectors */
+#secondArticle.articleTitle {
+  color: thistle;
 }
