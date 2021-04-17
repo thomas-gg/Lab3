@@ -129,3 +129,40 @@ video {
   margin: 10px;
   text-align: center;
 }
+
+/* title */
+#journalTitle {
+  font-size: 5em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* article title */
+.articleTitle {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  margin-top: -1mm;
+}
+
+/* keep 10% of the right side free just because */
+section {
+  width: 90%;
+}
+
+/* bar on the right side */
+/* Strange the 10% overlaps the 90% */
+#rightBar {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  border: 3px solid blue;
+}
+
+/* Short top right bottom left */
+#marginId {
+  margin: 1rem, 2rem, 1rem, 2rem;
+  border-style: double;
+  border-color: rgb(0, 7, 10);
+  border-width: 1vw;
+  border-radius: 3px;
+}
