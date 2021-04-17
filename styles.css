@@ -1,10 +1,10 @@
 body {
   background-color: rgb(193, 235, 255);
+  margin-left: 10px;
 }
 
 h1 {
   color: navy;
-  margin-left: 20px;
 }
 
 summary {
@@ -14,4 +14,24 @@ summary {
 /* Click the links below! */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
+  font-size: 5ex;
+}
+
+/* title */
+#journalTitle {
+  font-size: 5em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* Article title */
+.articleTitle {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  margin-top: -1mm;
+}
+
+/* keep 10% of the right side free just because */
+section {
+  width: 90vw;
 }
