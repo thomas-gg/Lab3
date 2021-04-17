@@ -1,6 +1,25 @@
+/* universal selector */
+* {
+  color: rgb(63, 0, 63);
+}
+
+/* element selector */
 body {
   background-color: rgb(193, 235, 255);
   margin-left: 10px;
+}
+
+/* media query */
+@media (max-width: 1000px) {
+  body {
+    background-color: rgb(252, 232, 169);
+  }
+}
+
+/* attribute selector */
+/* anchor tags which contain the id with the word second */
+a[href*="second"] {
+  color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -11,12 +30,148 @@ summary {
   color: #056401;
 }
 
+/* id selector */
 /* Click to articles! */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
   font-size: 5ex;
   top: 100px;
   font-family: "Comfortaa", cursive;
+}
+
+/* title */
+#journalTitle {
+  font-size: 5em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+/* article title */
+.articleTitle {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  margin-top: -1mm;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+/* pseudo-class sellector */
+.articleTitle:hover {
+  color: steelblue;
+}
+a:active {
+  background-color: yellow;
+}
+.subhead {
+  text-align: center;
+}
+.dated {
+  text-align: center;
+}
+
+/* keep 10% of the right side free just because */
+section {
+  width: 90%;
+}
+
+/* bar on the right side with cat */
+/* Strange the 10% overlaps the 90% */
+#rightBar {
+  position: fixed;
+  right: 0;
+  width: 10%;
+  border: 3px solid blue;
+  color: saddlebrown;
+  text-decoration: underline;
+}
+
+/* Short top right bottom left - box model*/
+#marginId {
+  margin: 1rem, 2rem, 1rem, 2rem;
+  border-style: double;
+  border-color: rgb(0, 7, 10);
+  border-width: 1vw;
+  border-radius: 3px;
+}
+
+textarea {
+  display: block;
+}
+input {
+  display: block;
+}
+
+/* selector list */
+form,
+fieldset {
+  display: inline;
+  min-width: 500px;
+}
+video {
+  display: inline;
+  height: 400px;
+  width: 200px;
+}
+
+#favSongsList {
+  min-height: 240px;
+  background-color: rgb(129, 164, 192);
+}
+#frisbee {
+  position: relative;
+  left: 40px;
+}
+
+.containerFlex {
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: slategray;
+}
+
+.flex-item {
+  background-color: turquoise;
+  font-size: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+.containerGrid {
+  display: grid;
+  /* flex-flow: row wrap; */
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  background: thistle;
+}
+
+.grid-item {
+  background-color: teal;
+  font-size: 30px;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+/*  Child combinator */
+#firstArticle > p {
+  color: palevioletred;
+}
+
+/*  general sibiling combinator */
+h3 ~ h4 {
+  color: rgb(139, 4, 156);
+}
+
+/* Descendant combinator */
+fieldset label {
+  color: tan;
+}
+
+/* Combining two selectors */
+#secondArticle.articleTitle {
+  color: thistle;
 }
 
 /* title */
