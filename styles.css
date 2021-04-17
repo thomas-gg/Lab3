@@ -16,6 +16,7 @@ summary {
   color: hsl(0, 0%, 20%);
   font-size: 5ex;
   top: 100px;
+  font-family: "Comfortaa", cursive;
 }
 
 /* title */
@@ -31,6 +32,7 @@ summary {
   margin-bottom: -10px;
   margin-top: -1mm;
   text-align: center;
+  font-family: "Comfortaa", cursive;
 }
 .articleTitle:hover {
   color: steelblue;
@@ -94,4 +96,36 @@ video {
 #frisbee {
   position: relative;
   left: 40px;
+}
+
+.containerFlex {
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: slategray;
+}
+
+.flex-item {
+  background-color: turquoise;
+  font-size: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+.containerGrid {
+  display: grid;
+  /* flex-flow: row wrap; */
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  background: thistle;
+}
+
+.grid-item {
+  background-color: teal;
+  font-size: 30px;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
 }
