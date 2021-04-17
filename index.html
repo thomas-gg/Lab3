@@ -13,6 +13,9 @@
                 max-width: 1000px;
             }
         </style>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -43,8 +46,8 @@
                 <hr>
                 <h1 id="firstArticle" class="articleTitle">First Article</h1>
                 <div>
-                    <h3>An OK Day!</h3>
-                    <h4>2021-4-7</h4>
+                    <h3 class="subhead">An OK Day!</h3>
+                    <h4 class="dated">2021-4-7</h4>
                     <p>Today I have a 15L lab which is somewhat fun. It is wayyyyyyyyy less interesting over zoom as a tutor though. Especiall the beginning with 0 tickets. Even though your fellow tutors are right there, nobody talks and everyone presumably is doing something else :( BUT I had a lot less to do today as compared to TU/THU</p>
                     <p>Also I heard one of my favorite songs though! This song on guitar is by Keshi (also this is my second take, so cut me some slack LOL)</p>
                     <audio controls>
@@ -63,10 +66,10 @@
                 <hr>
                 <h1 id="secondArticle" class="articleTitle">Second Article</h1>
                 <div>
-                    <h3>Another Pretty Good Day!</h3>
-                    <h4>2021-4-6</h4>
+                    <h3 class="subhead">Another Pretty Good Day!</h3>
+                    <h4 class="dated">2021-4-6</h4>
                     <p>Yesterday was pretty <b>tiring!</b> In order I:</p>
-                    <ol>
+                    <ol id="favSongsList">
                         <li>Skiped Music lecture so that I could watch Dasgupta's 101 lecture</li>
                         <li>Went to on campus UCSD to study with 2 friends</li>
                         <li>Exercised with them by playing frisbee</li>
@@ -78,7 +81,7 @@
                         <li>Participated in the tutor staff meeting</li>
                         <li>Graded for the rest of the day!</li>
                     </ol>
-                    <img src="./sources/frisbee.jpg" alt="frisbee.jpg" width="200" height="200" />
+                    <img src="./sources/frisbee.jpg" alt="frisbee.jpg" id="frisbee" width="200" height="200" />
                 </div>
                 <hr>
             </section>
@@ -86,42 +89,57 @@
                 <hr>
                 <h1 id="thirdArticle" class="articleTitle">Third Article</h1>
                 <div>
-                    <h3>A <span>Pretty</span> Good Day!</h3>
-                    <h4>2021-4-5</h4>
+                    <h3 class="subhead">A <span>Pretty</span> Good Day!</h3>
+                    <h4 class="dated">2021-4-5</h4>
                     <p>I really didn't think it could be that cool! It was a Monday and I had tutored for the second time ever! It was so much <i>easier</i> than the first time. The first time, the homework was due the same day and there was a constan <em>20+ tickets!!!</em> <br> This time though <strong>I got to relax and have fun</strong> with the tickets I did get. Other than that I just had some other training, so overall I was happy with what I did.</p>
                     <p>Also I saw this cutie (my apartment mate's cat)</p>
                     <video width="320" height="240" controls>
                         <source src="./sources/catvideo.mp4" type="video/mp4">
                       A video of my apartment mate's cat.
                     </video>
-                </div>
+                    <form>
+                        <fieldset>
+                            <legend>New Article:</legend>
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title"><br><br>
+                            <label for="subtitle">Subtitle:</label>
+                            <input type="text" id="subtitle" name="subtitle"><br><br>
+                            <label for="info">Text Info:</label>
+                            <textarea id="info" name="info" rows="4" cols="50"></textarea><br><br>
+                            <label for="subcategories">Choose a flavor:</label>
+                            <input list="subcats" id="subcategories" name="subcategories" />
+                            <datalist id="subcats">
+                                <option value="Serious">
+                                <option value="Funny">
+                            </datalist>
+                            <button type="button">button no function really</button>
+                            <label for="cats">Choose Cat:</label>
+                            <select id="cats">
+                                <option value="Tiger">Tiger</option>
+                                <option value="DomesticShort">Domestic Short Hair</option>
+                            </select>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>  
                 <hr>
             </section>
             <section>
-                <form>
-                    <fieldset>
-                        <legend>New Article:</legend>
-                        <label for="title">Title:</label>
-                        <input type="text" id="title" name="title"><br><br>
-                        <label for="subtitle">Subtitle:</label>
-                        <input type="text" id="subtitle" name="subtitle"><br><br>
-                        <label for="info">Text Info:</label>
-                        <textarea id="info" name="info" rows="4" cols="50"></textarea><br><br>
-                        <label for="subcategories">Choose a flavor:</label>
-                        <input list="subcats" id="subcategories" name="subcategories" />
-                        <datalist id="subcats">
-                            <option value="Serious">
-                            <option value="Funny">
-                        </datalist>
-                        <button type="button">button no function really</button>
-                        <label for="cats">Choose Cat:</label>
-                        <select id="cats">
-                            <option value="Tiger">Tiger</option>
-                            <option value="DomesticShort">Domestic Short Hair</option>
-                        </select>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+                <hr>
+                <div>
+                    <div class="containerFlex">
+                        <div class="flex-item">noice</div>
+                        <div class="flex-item">hehe</div>
+                        <div class="flex-item">test</div>
+                        <div class="flex-item">flex?</div>
+                    </div>
+                    <div class="containerGrid">
+                        <div class="grid-item">g</div>
+                        <div class="grid-item">r</div>
+                        <div class="grid-item">i</div>
+                        <div class="grid-item">d?</div>
+                    </div>
+                </div>
             </section>
         </main>
         <!-- Inline CSS -->
