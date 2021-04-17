@@ -11,10 +11,11 @@ summary {
   color: #056401;
 }
 
-/* Click the links below! */
+/* Click to articles! */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
   font-size: 5ex;
+  top: 100px;
 }
 
 /* title */
@@ -29,6 +30,19 @@ summary {
   font-size: 30pt;
   margin-bottom: -10px;
   margin-top: -1mm;
+  text-align: center;
+}
+.articleTitle:hover {
+  color: steelblue;
+}
+a:active {
+  background-color: yellow;
+}
+.subhead {
+  text-align: center;
+}
+.dated {
+  text-align: center;
 }
 
 /* keep 10% of the right side free just because */
@@ -36,20 +50,48 @@ section {
   width: 90%;
 }
 
-/* bar on the right side */
+/* bar on the right side with cat */
 /* Strange the 10% overlaps the 90% */
 #rightBar {
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 10%;
   border: 3px solid blue;
+  color: saddlebrown;
+  text-decoration: underline;
 }
 
-/* Short top right bottom left */
+/* Short top right bottom left - box model*/
 #marginId {
   margin: 1rem, 2rem, 1rem, 2rem;
   border-style: double;
   border-color: rgb(0, 7, 10);
   border-width: 1vw;
   border-radius: 3px;
+}
+
+textarea {
+  display: block;
+}
+input {
+  display: block;
+}
+form,
+fieldset {
+  display: inline;
+  min-width: 500px;
+}
+video {
+  display: inline;
+  height: 400px;
+  width: 200px;
+}
+
+#favSongsList {
+  min-height: 240px;
+  background-color: steelblue;
+}
+#frisbee {
+  position: relative;
+  left: 40px;
 }
