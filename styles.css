@@ -48,8 +48,8 @@ section {
 /* Short top right bottom left */
 #marginId {
   margin: 1rem, 2rem, 1rem, 2rem;
-  border-radius: 3px;
   border-style: double;
   border-color: rgb(0, 7, 10);
   border-width: 1vw;
+  border-radius: 3px;
 }
