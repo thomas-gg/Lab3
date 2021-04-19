@@ -4,6 +4,7 @@
 }
 
 /* element selector */
+/* unit px absolute */
 body {
   background-color: rgb(193, 235, 255);
   margin-left: 10px;
@@ -32,6 +33,7 @@ summary {
 
 /* id selector */
 /* Click to articles! */
+/* unit ex relative */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
   font-size: 5ex;
@@ -40,6 +42,8 @@ summary {
 }
 
 /* title */
+/* unit em relative */
+/* unit rem relative */
 #journalTitle {
   font-size: 5em;
   margin-top: -1rem;
@@ -47,15 +51,19 @@ summary {
 }
 
 /* article title */
+/* unit pt absolute */
+/* unit mm absolute */
+/* Margin box */
 .articleTitle {
   font-size: 30pt;
   margin-bottom: -10px;
   margin-top: -1mm;
+  margin-right: 1mm;
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
 
-/* pseudo-class sellector */
+/* pseudo-class selector */
 .articleTitle:hover {
   color: steelblue;
 }
@@ -85,9 +93,10 @@ section {
   text-decoration: underline;
 }
 
-/* Short top right bottom left - box model*/
+/* Short top right bottom left - box model margin short padding short*/
 #marginId {
-  margin: 1rem, 2rem, 1rem, 2rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 10px 20px 10px 20px;
   border-style: double;
   border-color: rgb(0, 7, 10);
   border-width: 1vw;
@@ -102,10 +111,12 @@ input {
 }
 
 /* selector list */
+/* margin auto */
 form,
 fieldset {
   display: inline;
   min-width: 500px;
+  margin: auto;
 }
 video {
   display: inline;
@@ -131,11 +142,15 @@ video {
   background: slategray;
 }
 
+/*  margin long */
 .flex-item {
   background-color: turquoise;
   font-size: 30px;
   width: 200px;
-  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .containerGrid {
@@ -146,12 +161,17 @@ video {
   background: thistle;
 }
 
+/* padding long */
 .grid-item {
   background-color: teal;
   font-size: 30px;
   width: 200px;
   margin: 10px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*  Child combinator */
@@ -174,150 +194,7 @@ fieldset label {
   color: thistle;
 }
 
-/* title */
-#journalTitle {
-  font-size: 5em;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-
-/* article title */
-.articleTitle {
-  font-size: 30pt;
-  margin-bottom: -10px;
-  margin-top: -1mm;
-  text-align: center;
-  font-family: "Comfortaa", cursive;
-}
-.articleTitle:hover {
-  color: steelblue;
-}
-a:active {
-  background-color: yellow;
-}
-.subhead {
-  text-align: center;
-}
-.dated {
-  text-align: center;
-}
-
-/* keep 10% of the right side free just because */
-section {
-  width: 90%;
-}
-
-/* bar on the right side with cat */
-/* Strange the 10% overlaps the 90% */
-#rightBar {
-  position: fixed;
-  right: 0;
-  width: 10%;
-  border: 3px solid blue;
-  color: saddlebrown;
-  text-decoration: underline;
-}
-
-/* Short top right bottom left - box model*/
-#marginId {
-  margin: 1rem, 2rem, 1rem, 2rem;
-  border-style: double;
-  border-color: rgb(0, 7, 10);
-  border-width: 1vw;
-  border-radius: 3px;
-}
-
-textarea {
-  display: block;
-}
-input {
-  display: block;
-}
-form,
-fieldset {
-  display: inline;
-  min-width: 500px;
-}
-video {
-  display: inline;
-  height: 400px;
-  width: 200px;
-}
-
-#favSongsList {
-  min-height: 240px;
-  background-color: steelblue;
-}
-#frisbee {
-  position: relative;
-  left: 40px;
-}
-
-.containerFlex {
-  display: flex;
-  /* flex-flow: row wrap; */
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background: slategray;
-}
-
-.flex-item {
-  background-color: turquoise;
-  font-size: 30px;
-  width: 200px;
-  margin: 10px;
-}
-
-.containerGrid {
-  display: grid;
-  /* flex-flow: row wrap; */
-  grid-template-columns: auto auto auto;
-  justify-items: center;
-  background: thistle;
-}
-
-.grid-item {
-  background-color: teal;
-  font-size: 30px;
-  width: 200px;
-  margin: 10px;
-  text-align: center;
-}
-
-/* title */
-#journalTitle {
-  font-size: 5em;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-
-/* article title */
-.articleTitle {
-  font-size: 30pt;
-  margin-bottom: -10px;
-  margin-top: -1mm;
-}
-
-/* keep 10% of the right side free just because */
-section {
-  width: 90%;
-}
-
-/* bar on the right side */
-/* Strange the 10% overlaps the 90% */
-#rightBar {
-  position: absolute;
-  right: 0;
-  width: 10%;
-  border: 3px solid blue;
-}
-
-/* Short top right bottom left */
-#marginId {
-  margin: 1rem, 2rem, 1rem, 2rem;
-  border-style: double;
-  border-color: rgb(0, 7, 10);
-  border-width: 1vw;
-  border-radius: 3px;
+/* adjacent selector */
+video + form {
+  padding: 10px;
 }
