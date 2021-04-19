@@ -4,6 +4,7 @@
 }
 
 /* element selector */
+/* unit px absolute */
 body {
   background-color: rgb(193, 235, 255);
   margin-left: 10px;
@@ -32,6 +33,7 @@ summary {
 
 /* id selector */
 /* Click to articles! */
+/* unit ex relative */
 #articlesPrompt {
   color: hsl(0, 0%, 20%);
   font-size: 5ex;
@@ -40,6 +42,8 @@ summary {
 }
 
 /* title */
+/* unit em relative */
+/* unit rem relative */
 #journalTitle {
   font-size: 5em;
   margin-top: -1rem;
@@ -47,15 +51,19 @@ summary {
 }
 
 /* article title */
+/* unit pt absolute */
+/* unit mm absolute */
+/* Margin box */
 .articleTitle {
   font-size: 30pt;
   margin-bottom: -10px;
   margin-top: -1mm;
+  margin-right: 1mm;
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
 
-/* pseudo-class sellector */
+/* pseudo-class selector */
 .articleTitle:hover {
   color: steelblue;
 }
@@ -85,9 +93,10 @@ section {
   text-decoration: underline;
 }
 
-/* Short top right bottom left - box model*/
+/* Short top right bottom left - box model margin short padding short*/
 #marginId {
-  margin: 1rem, 2rem, 1rem, 2rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 10px 20px 10px 20px;
   border-style: double;
   border-color: rgb(0, 7, 10);
   border-width: 1vw;
@@ -102,10 +111,12 @@ input {
 }
 
 /* selector list */
+/* margin auto */
 form,
 fieldset {
   display: inline;
   min-width: 500px;
+  margin: auto;
 }
 video {
   display: inline;
@@ -131,11 +142,15 @@ video {
   background: slategray;
 }
 
+/*  margin long */
 .flex-item {
   background-color: turquoise;
   font-size: 30px;
   width: 200px;
-  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .containerGrid {
@@ -146,12 +161,17 @@ video {
   background: thistle;
 }
 
+/* padding long */
 .grid-item {
   background-color: teal;
   font-size: 30px;
   width: 200px;
   margin: 10px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*  Child combinator */
@@ -172,4 +192,9 @@ fieldset label {
 /* Combining two selectors */
 #secondArticle.articleTitle {
   color: thistle;
+}
+
+/* adjacent selector */
+video + form {
+  padding: 10px;
 }
